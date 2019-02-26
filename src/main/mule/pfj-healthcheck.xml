@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="pfj-healthcheckFlow" doc:id="ad64dcd8-47b8-44ab-be30-27c17bc2b328" >
 		<http:listener doc:name="Listener" doc:id="55ad01e6-66ce-41ce-98c5-028bdbf88808" config-ref="HTTP_Listener_config" path="/"/>
 		<logger level="INFO" doc:name="Logger" doc:id="c91d884d-fab3-4c93-8e5e-dfbb44518050" message="BEGIN TRANSACTION"/>
-		<set-payload value='#["SUCCESS"]' doc:name="Set Payload" doc:id="1de76b3e-7db3-497d-9c32-87dd93d80a93" />
+		<set-payload value='#["SUCCESS - 1"]' doc:name="Set Payload" doc:id="1de76b3e-7db3-497d-9c32-87dd93d80a93" />
 		<logger level="INFO" doc:name="Logger" doc:id="45c88945-57db-441a-aac3-2d42a3601823" message="#[payload]"/>
 	</flow>
 </mule>
