@@ -20,6 +20,14 @@ pipeline {
                 sh "mvn deploy -DmuleDeploy -Dusername=$ANYPOINT_CORP_USR -Dpassword=$ANYPOINT_CORP_PSW -DbusinessGroup=${params.businessGroup} -Denvironment=${params.environment}"
             }
         }
+        stage('ArtefactoryDeploy') {
+            steps {
+                echo 'Starting to deploy using Jenkins Credentials.....'
+                sh "mvn package deploy:deploy"
+              //  sh "mvn mule:deploy -Dusername=$ANYPOINT_CORP_USR -Dpassword=$ANYPOINT_CORP_PSW -DbusinessGroup=${params.businessGroup} -Denvironment=${params.environment} "
+              
+            }
+        }
       
     }
  }

@@ -66,11 +66,7 @@
 			<url>https://repository.mulesoft.org/releases/</url>
 			<layout>default</layout>
 		</repository>
-		<repository>
-        <id>snapshots</id>
-        <name>panodimos-ltm.internal.salesforce.com-snapshots</name>
-        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-    </repository>
+    
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -83,5 +79,13 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+	
+		<distributionManagement>
+    <snapshotRepository>
+       <id>snapshots</id>
+        <name>panodimos-ltm.internal.salesforce.com-snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
