@@ -14,7 +14,7 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
+        stage('Deploy')  {
             steps {
                 echo 'Staring to deploy using Jenkins Credentials.....'
                 sh "mvn deploy -DmuleDeploy -Dusername=$ANYPOINT_CORP_USR -Dpassword=$ANYPOINT_CORP_PSW -DbusinessGroup=${params.businessGroup} -Denvironment=${params.environment}"

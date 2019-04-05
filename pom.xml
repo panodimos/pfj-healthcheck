@@ -80,7 +80,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 	
-		<distributionManagement>
+<distributionManagement>
     <snapshotRepository>
        <id>snapshots</id>
         <name>panodimos-ltm.internal.salesforce.com-snapshots</name>
