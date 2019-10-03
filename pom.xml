@@ -63,6 +63,12 @@
             <version>1.0.0</version>
             <classifier>mule-plugin</classifier>
         </dependency>
+    	<dependency>
+            <groupId>com.mulesoft.connectors</groupId>
+            <artifactId>mule-microsoft-dotnet-connector</artifactId>
+            <version>3.0.2</version>
+            <classifier>mule-plugin</classifier>
+        </dependency>
     </dependencies>
 
 	<repositories>
